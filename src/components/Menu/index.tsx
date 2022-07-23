@@ -24,24 +24,25 @@ const Menu = (props) => {
   const activeSubMenuItem = getActiveSubMenuItem({ menuItem: activeMenuItem, pathname })
 
   return (
-    <UikitMenu
-      userMenu={<UserMenu />}
-      globalMenu={<GlobalSettings />}
-      banner={showPhishingWarningBanner && <PhishingWarningBanner />}
-      isDark={isDark}
-      toggleTheme={toggleTheme}
-      currentLang={currentLanguage.code}
-      langs={languageList}
-      setLang={setLanguage}
-      cakePriceUsd={0.1}
-      links={config(t)}
-      subLinks={activeMenuItem?.hideSubNav ? [] : activeMenuItem?.items}
-      footerLinks={footerLinks(t)}
-      activeItem={activeMenuItem?.href}
-      activeSubItem={activeSubMenuItem?.href}
-      buyCakeLabel={t('Buy DEXO')}
-      {...props}
-    />
+   
+      <UikitMenu
+        userMenu={<UserMenu />}
+        globalMenu={<GlobalSettings />}
+        banner={showPhishingWarningBanner && <PhishingWarningBanner />}  
+        toggleTheme={toggleTheme}
+        currentLang={currentLanguage.code}
+        langs={languageList}
+        setLang={setLanguage}
+        cakePriceUsd={0.1}
+        links={config(t)}
+        subLinks={activeMenuItem?.hideSubNav ? [] : activeMenuItem?.items}
+        footerLinks={footerLinks(t)}
+        activeItem={activeMenuItem?.href}
+        activeSubItem={activeSubMenuItem?.href}
+        buyCakeLabel={t('Buy DEXO')}
+        {...props}
+      />
+  
   )
 }
 
