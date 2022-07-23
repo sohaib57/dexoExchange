@@ -41,7 +41,7 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
   const { t } = useTranslation()
   const isSide = variant === 'side'
   return (
-    <div style={{ background: 'black' }}>
+  
       <Wrapper $isSide={isSide}>
         <Flex flexDirection={isSide ? 'column' : ['column', 'column', 'row']} alignItems="center">
           <LinkExternal
@@ -78,7 +78,7 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
           <Image src="/images/help.svg" alt="Get some help" width={160} height={108} />
         </Flex>
       </Wrapper>
-    </div>
+  
   )
 }
 
