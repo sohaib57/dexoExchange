@@ -15,9 +15,9 @@ interface Props {
 
 const CurrencyInputContainer = styled(Flex)`
   align-items: center;
-  padding: 24px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   width: 100%;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
 `
 
 const CurrencyInputHeader: React.FC<Props> = ({ title, subtitle, setIsChartDisplayed }) => {
@@ -28,33 +28,32 @@ const CurrencyInputHeader: React.FC<Props> = ({ title, subtitle, setIsChartDispl
   const [onPresentTransactionsModal] = useModal(<TransactionsModal />)
 
   return (
-    <CurrencyInputContainer>
-      <Flex width="100%" alignItems="flex-start" justifyContent="space-between" >
-        {/* {setIsChartDisplayed && (
-          <IconButton onClick={toggleChartDisplayed} variant="text" scale="sm">
-            <ChartIcon width="24px" color="primary" />
+    <>
+     <Flex width="100%" justifyContent="flex-end" px="2.5rem" pt="2.5rem">
+          <NotificationDot show={expertMode}>
+            <GlobalSettings color="#a1a5ad" mr="0" />
+          </NotificationDot>
+          <IconButton onClick={onPresentTransactionsModal} variant="text" scale="sm">
+            <HistoryIcon color="#67738b" width="1.6rem" />
           </IconButton>
-        )} */}
+        </Flex>
+    <CurrencyInputContainer>
+      <Flex width="100%"  justifyContent="center" >
+
         <Flex flexDirection="column" alignItems="center">
-          <Heading as="h2" mb="8px">
+          <Text lineHeight="1.2" fontWeight="bold" fontSize="3rem" mb="5px">
             {title}
-          </Heading>
+          </Text>
           <Flex alignItems="center">
-            <Text color="textSubtle" fontSize="14px">
+            <Text color="textSubtle" fontSize="1.1rem">
               {subtitle}
             </Text>
           </Flex>
         </Flex>
-        <Flex>
-          <NotificationDot show={expertMode}>
-            <GlobalSettings color="primary" mr="0" />
-          </NotificationDot>
-          <IconButton onClick={onPresentTransactionsModal} variant="text" scale="sm">
-            <HistoryIcon color="primary" width="24px" />
-          </IconButton>
-        </Flex>
+       
       </Flex>
     </CurrencyInputContainer>
+    </>
   )
 }
 
