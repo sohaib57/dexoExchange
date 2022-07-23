@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Box, Flex } from '@pancakeswap/uikit'
-import Footer from 'components/Menu/Footer'
+// import Footer from 'components/Menu/Footer'
 import { PageMeta } from 'components/Layout/Page'
 
 const StyledPage = styled.div<{ $removePadding: boolean }>`
@@ -25,7 +25,7 @@ const StyledPage = styled.div<{ $removePadding: boolean }>`
   ${({ theme }) => theme.mediaQueries.lg} {
     padding: ${({ $removePadding }) => ($removePadding ? '0' : '32px')};
     padding-bottom: 0;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh);
   }
 `
 
@@ -38,9 +38,7 @@ const Page: React.FC<
       <StyledPage $removePadding={removePadding} {...props}>
         {children}
         <Flex flexGrow={1} />
-        <Box display={['block', null, null, hideFooterOnDesktop ? 'none' : 'block']} width="100%">
-          <Footer />
-        </Box>
+     
       </StyledPage>
     </>
   )
