@@ -23,12 +23,11 @@ const GlobalStyle = createGlobalStyle`
   // header
   .cLxnYb {
     position: relative;
-    z-index: unset !important;
+    z-index: 1 !important;
     height: 100px;
   }
   .iLuIaV {
     position: relative;
-    z-index: unset !important;
     height: 100px;
   }
   .ljhUAa{
