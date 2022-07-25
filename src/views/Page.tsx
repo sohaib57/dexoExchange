@@ -10,22 +10,20 @@ const StyledPage = styled.div<{ $removePadding: boolean }>`
   align-items: center;
   width: 100%;
   padding: ${({ $removePadding }) => ($removePadding ? '0' : '16px')};
-  padding-bottom: 0;
-  min-height: calc(100vh - 64px);
 
   ${({ theme }) => theme.mediaQueries.xs} {
     background-size: auto;
   }
 
   ${({ theme }) => theme.mediaQueries.sm} {
-    padding: ${({ $removePadding }) => ($removePadding ? '0' : '24px')};
-    padding-bottom: 0;
+    padding: ${({ $removePadding }) => ($removePadding ? '0' : '50px')};
+
   }
 
+
   ${({ theme }) => theme.mediaQueries.lg} {
-    padding: ${({ $removePadding }) => ($removePadding ? '0' : '32px')};
-    padding-bottom: 0;
-    min-height: calc(100vh);
+    padding: ${({ $removePadding }) => ($removePadding ? '0' : '70px')};
+
   }
 `
 

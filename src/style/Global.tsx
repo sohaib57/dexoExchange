@@ -21,10 +21,21 @@ const GlobalStyle = createGlobalStyle`
     
   }
   // header
+  .cLxnYb {
+    position: relative;
+    z-index: unset !important;
+    height: 100px;
+  }
+  .iLuIaV {
+    position: relative;
+    z-index: unset !important;
+    height: 100px;
+  }
   .ljhUAa{
+    height: 100px;
   background: linear-gradient(0deg,rgba(14,19,48,0) -156.13%,rgba(14,19,48,.3) 90.09%);
   backdrop-filter: blur(81.5485px);
-  padding-inline: 5rem;
+  padding-inline: 7rem;
 }
 // footer
 .fHVXkX {
@@ -50,6 +61,9 @@ border-top: 1px solid #383241;
 .cIXZDv:hover {
   color: #765DF6;
   text-decoration: none;
+}
+.gKnNVk {
+  margin:0 !important;
 }
 `
 
