@@ -24,8 +24,7 @@ const GlobalStyle = createGlobalStyle`
   .ljhUAa{
   background: linear-gradient(0deg,rgba(14,19,48,0) -156.13%,rgba(14,19,48,.3) 90.09%);
   backdrop-filter: blur(81.5485px);
-  padding-inline: 4rem;
-  padding-block: 2.5rem;
+  padding-inline: 5rem;
 }
 // footer
 .fHVXkX {
@@ -37,6 +36,20 @@ border-top: 1px solid #383241;
 }
 .bOTSjc {
   border-bottom: none;
+}
+.pTkiS {
+  color: white;
+}
+.kTejTD:first-child{
+  color: white;
+  font-wight: 400;
+}
+.cIXZDv {
+  color: #8f9bb7;
+}
+.cIXZDv:hover {
+  color: #765DF6;
+  text-decoration: none;
 }
 `
 
