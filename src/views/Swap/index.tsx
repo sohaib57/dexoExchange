@@ -339,6 +339,9 @@ export default function Swap({ history }: RouteComponentProps) {
   const styles = {
     container: {
       backgroundColor: 'red'
+    },
+    wrapper:{
+      padding: '1rem 4rem 4rem 4rem'
     }
   }
 
@@ -384,7 +387,7 @@ export default function Swap({ history }: RouteComponentProps) {
                   setIsChartDisplayed={setIsChartDisplayed}
                   isChartDisplayed={isChartDisplayed}
                 />
-                <Wrapper id="swap-page">
+                <Wrapper style={styles.wrapper} id="swap-page">
                   <AutoColumn gap="md">
                     <CurrencyInputPanel
                       label={
