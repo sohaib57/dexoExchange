@@ -56,6 +56,7 @@ const NftMarket = lazy(() => import('./views/Nft/market'))
 const ProfileCreation = lazy(() => import('./views/ProfileCreation'))
 const PancakeSquad = lazy(() => import('./views/PancakeSquad'))
 
+
 // This config is required for number formatting
 BigNumber.config({
   EXPONENTIAL_AT: 1000,

@@ -42,7 +42,9 @@ const IfoQuestions = () => {
               {t('Details')}
             </Heading>
           </CardHeader>
+
           <CardBody>
+            
             {config(t).map(({ title, description }, i, { length }) => (
               <FoldableText key={title} id={title} mb={i + 1 === length ? '' : '24px'} title={title}>
                 {description.map((desc) => {

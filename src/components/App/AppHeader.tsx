@@ -7,6 +7,7 @@ import GlobalSettings from 'components/Menu/GlobalSettings'
 import Transactions from './Transactions'
 import QuestionHelper from '../QuestionHelper'
 
+
 interface Props {
   title: string
   subtitle: string

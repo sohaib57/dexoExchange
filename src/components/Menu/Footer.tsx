@@ -43,7 +43,7 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
   return (
   
       <Wrapper $isSide={isSide}>
-        <Flex flexDirection={isSide ? 'column' : ['column', 'column', 'row']} alignItems="center">
+        {/* <Flex flexDirection={isSide ? 'column' : ['column', 'column', 'row']} alignItems="center">
           <LinkExternal
             id="ercBridge"
             href="https://docs.binance.org/smart-chain/guides/cross-chain.html"
@@ -76,7 +76,7 @@ const Footer: React.FC<{ variant?: FooterVariant }> = ({ variant = 'default' }) 
             </Svg>
           </BubbleWrapper>
           <Image src="/images/help.svg" alt="Get some help" width={160} height={108} />
-        </Flex>
+        </Flex> */}
       </Wrapper>
   
   )
