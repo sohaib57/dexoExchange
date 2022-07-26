@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100px;
   background: linear-gradient(0deg,rgba(14,19,48,0) -156.13%,rgba(14,19,48,.3) 90.09%);
   backdrop-filter: blur(81.5485px);
-  padding-inline: 7rem;
+  padding-inline: 1rem;
 }
 // footer
 .fHVXkX {
@@ -63,6 +63,46 @@ border-top: 1px solid #383241;
 }
 .gKnNVk {
   margin:0 !important;
+}
+.fYDmMR{
+  padding: 0;
+}
+@media screen and (min-width: 800px) {
+  .ljhUAa{
+  padding-inline: 7rem;
+}
+}
+@media screen and (max-width: 600px) {
+  .ljhUAa{
+  padding-inline: 2rem;
+}
+.gUixnn{
+  padding: 10px;
+}
+.fRbdfc {
+  font-size: 2rem;
+}
+.bGfBeh {
+  font-size: 0.8rem;
+}
+.kHFFwp {
+  padding: 1rem;
+}
+.bwvFDe {
+  padding: 1rem;
+}
+.gMHWOT {
+  padding: 1rem;
+}
+}
+@media screen and (max-width: 425px) {
+  .ljhUAa{
+  padding-inline: 1rem;
+}
+.fRbdfc {
+  font-size: 1.4rem;
+}
+
 }
 `
 
